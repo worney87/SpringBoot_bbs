@@ -1,0 +1,13 @@
+<!-- src/main/resources/templates/error.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error</title>
+</head>
+<body>
+    <h1>에러 발생!</h1>
+    <p th:text="'에러 메시지: ' + ${message}"></p>
+    <p th:text="'에러 코드: ' + ${status}"></p>
+    <p th:text="'요청 경로: ' + ${path}"></p>
+</body>
+</html>
